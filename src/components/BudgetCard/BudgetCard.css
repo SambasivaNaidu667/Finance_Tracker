@@ -1,0 +1,135 @@
+.budget-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  transition: all var(--transition-base);
+}
+
+.budget-card:hover {
+  border-color: var(--color-border-hover);
+}
+
+.budget-card--over {
+  border-color: var(--color-warning-border);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.08);
+}
+
+.budget-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+}
+
+.budget-card__title-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.budget-card__icon {
+  color: var(--color-accent);
+}
+
+.budget-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+}
+
+.budget-card__body {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.budget-card__ring-wrapper {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+}
+
+.budget-card__ring {
+  width: 100%;
+  height: 100%;
+}
+
+.budget-card__ring-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.budget-card__ring-percent {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.budget-card__ring-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.budget-card__stats {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.budget-card__stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.budget-card__stat-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.budget-card__stat-value {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+.budget-card__stat-value--income {
+  color: var(--color-income);
+}
+
+.budget-card__stat-value--expense {
+  color: var(--color-expense);
+}
+
+.budget-card__progress-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.budget-card__progress-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .budget-card__body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .budget-card__stats {
+    width: 100%;
+  }
+}

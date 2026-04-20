@@ -1,0 +1,124 @@
+.budget-page__warning {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-warning-bg);
+  border: 1px solid var(--color-warning-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-xl);
+  color: var(--color-warning);
+}
+
+.budget-page__warning strong {
+  display: block;
+  margin-bottom: 2px;
+  font-size: var(--font-size-sm);
+}
+
+.budget-page__warning p {
+  font-size: var(--font-size-xs);
+  opacity: 0.8;
+}
+
+.budget-page__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+
+.budget-page__col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.budget-page__stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.budget-page__categories {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+}
+
+.budget-page__cat-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-lg);
+}
+
+.budget-page__cat-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.budget-page__cat-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.budget-page__cat-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.budget-page__cat-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.budget-page__cat-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.budget-page__cat-name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.budget-page__cat-amount {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+.budget-page__cat-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.budget-page__cat-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+}
+
+.budget-page__cat-pct {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-semibold);
+  min-width: 40px;
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .budget-page__grid {
+    grid-template-columns: 1fr;
+  }
+}

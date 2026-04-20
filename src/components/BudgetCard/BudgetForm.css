@@ -1,0 +1,55 @@
+.budget-form {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+}
+
+.budget-form__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-xs);
+}
+
+.budget-form__desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.budget-form__input-group {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.budget-form__input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.budget-form__input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+}
+
+.budget-form__input {
+  padding-left: 38px;
+}
+
+@media (max-width: 480px) {
+  .budget-form__input-group {
+    flex-direction: column;
+  }
+
+  .budget-form__input-wrapper {
+    width: 100%;
+  }
+
+  .budget-form__input-group .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+.sort-control {
+  display: flex;
+  align-items: center;
+}
+
+.sort-control__select {
+  min-width: 180px;
+  font-size: var(--font-size-xs);
+  padding: 8px 30px 8px 10px;
+}

@@ -1,0 +1,22 @@
+.transactions-page__toolbar {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.transactions-page__list {
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 600px) {
+  .transactions-page__toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .transactions-page__toolbar .search-bar {
+    max-width: 100%;
+  }
+}
