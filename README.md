@@ -105,15 +105,6 @@ src/
 
 ---
 
-## 📝 Evaluation Criteria Met
-- [x] **Feature Completeness**: All 8 core features implemented.
-- [x] **React Architecture**: Modular structure with custom hooks and Context API.
-- [x] **UI/UX**: Premium dark-mode design with glassmorphism and animations.
-- [x] **API Integration**: Real-time currency exchange rates.
-- [x] **Code Quality**: Clean, documented, and following React best practices.
-
----
-
 ## 👨‍💻 Author
 **Sambasiva Naidu**
 [Repository Link](https://github.com/SambasivaNaidu667/Finance_Tracker)
